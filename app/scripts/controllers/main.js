@@ -1,6 +1,6 @@
 'use strict';
 
-var commonsURL = "https://commons.wikimedia.org/w/api.php?action=query&prop=revisions&format=json&rvprop=content&generator=allpages&gapnamespace=460&gaplimit=500&callback=JSON_CALLBACK";
+var commonsURL = "https://commons.wikimedia.org/w/api.php?action=query&prop=revisions&format=json&rvprop=content&generator=allpages&gapnamespace=460&gaplimit=max&callback=JSON_CALLBACK";
 angular.module('masscampsApp')
   .controller('MainCtrl', ['$scope', '$http', '$sanitize', function ($scope, $http, $sanitize) {
 
