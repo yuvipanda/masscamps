@@ -1,0 +1,51 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    padding-top: 40px;
+}
+
+#header h1 {
+    display: inline;
+}
+
+#header {
+    margin-bottom: 48px;
+}
+
+#campaignSearch {
+    width: 640px;
+}
+
+#controls-row {
+    text-align: center;
+}
+
+.json-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-family: 'Bitstream Vera Sans', 'DejaVu Sans', 'Lucida Sans', 'Lucida Grande', sans-serif;
+	font-style: normal;
+}
+
+.json-table th,
+.json-table td {
+	border: 1px solid gray;
+	font-size: 16px;
+	padding: 0.5em 1em;
+}
+
+.json-table td {
+	background-color: #eee;
+	font-style: italic;
+}
+
+.json-table .value {
+	background-color: #dcfae3;
+	font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Courier, monospace;
+	white-space: pre-wrap;
+}
+
+.json-table tr {
+	margin-bottom: 0.5em;
+}
