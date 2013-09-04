@@ -1,19 +1,18 @@
 <div class="container">
-  <div class="row" id="header">
-    <div class="span12">
-    <h1>MassCamps!</h1> <small>Manage all the campaigns!</small>
+    <div class="row" id="header">
+        <div class="span12">
+            <h1>MassCamps!</h1> <small>Manage all the campaigns!</small>
+        </div>
     </div>
-  </div>
 
-  <div class="row" id="controls-row">
-    <form class="form-inline">
-	<input id="campaignSearch" placeholder="campaign name" type="text" ng-model="search" />
-	<label><input type="checkbox" ng-model="hideDisabled" ng-checked="true" /> Hide disabled</label>
-      <button ng-click="refreshCampaigns()" class="btn">Refresh</button>
-      </form>
-  </div>
-	      
-  </div>
+    <div class="row" id="controls-row">
+        <form class="form-inline">
+            <input id="campaignSearch" placeholder="campaign name" type="text" ng-model="search" />
+            <label><input type="checkbox" ng-model="hideDisabled" ng-checked="true" /> Hide disabled</label>
+            <button ng-click="refreshCampaigns()" class="btn">Refresh</button>
+        </form>
+    </div>
+
     <div ng-repeat="campaign in campaigns | filter:campaignFilter" ng-bind-html-unsafe="displayCampaign(campaign)">
     </div>
 </div>
