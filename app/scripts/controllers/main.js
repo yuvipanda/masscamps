@@ -12,7 +12,13 @@ angular.module('masscampsApp')
             var result = "<table class='json-table table table-bordered'>";
             if('name' in iterable) {
                 result += "<tr><th colspan=2><a href='https://cammons.wikimedia.org/wiki/Campaign" + $sanitize(iterable.name) + "'>" + iterable.name + "</a>";
-                result += "<a href='https://commons.wikimedia.org/wiki/Campaign:" + $sanitize(iterable.name) + "?action=edit' class='btn' target='_blank'>Edit</a></th></tr>";
+                result += "<div class='campaign-actions btn-group'>";
+                result += "<a href='https://commons.wikimedia.org/wiki/Campaign_talk:" + $sanitize(iterable.name) + "' class='btn' target='_blank'>Talk</a>";
+                result += "<a href='https://commons.wikimedia.org/wiki/Campaign:" + $sanitize(iterable.name) + "?action=edit' class='btn' target='_blank'>Edit</a>";
+                result += "<a href='https://commons.wikimedia.org/wiki/Campaign:" + $sanitize(iterable.name) + "?action=history' class='btn' target='_blank'>History</a>";
+                result += "</div>";
+
+                result += "</th></tr>";
             }
 
             angular.forEach(iterable, function(value, key) {

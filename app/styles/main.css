@@ -21,6 +21,11 @@ body {
     text-align: center;
 }
 
+.campaign-actions {
+    margin-left: 8px;
+    float: right;
+}
+
 .json-table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -33,6 +38,10 @@ body {
 	border: 1px solid gray;
 	font-size: 16px;
 	padding: 0.5em 1em;
+}
+
+.json-table th {
+    vertical-align: center;
 }
 
 .json-table td {
